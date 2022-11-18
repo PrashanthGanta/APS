@@ -24,7 +24,7 @@ pipeline {
         }
         stage('Deployment') {
             steps {
-                echo 'deploy the application to main server for users'
+                echo 'deploy the application to main server for users for downling the application'
             }
             
         }
