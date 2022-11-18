@@ -25,6 +25,12 @@ pipeline {
         stage('Deployment') {
             steps {
                 echo 'deploy the application to main server for users for downling the application'
+            }            
+        }
+         stage('python') {
+            steps {
+                echo 'running python script'
+                bat 'python python/test.py'
             }
             
         }
