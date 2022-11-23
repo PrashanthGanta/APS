@@ -1,4 +1,9 @@
+import sys
 print("Hello World")
-l1=[1,2,3,4,5,6]
-for i in l1:
-  print(i)
+print("\nName of Python script:", sys.argv[0])
+
+input_a=str(sys.argv[0])
+print("outside function call---> "+input_a)
+def sample_fun(x):
+  print("inside function: "+str(x))
+sample_fun(input_a)
